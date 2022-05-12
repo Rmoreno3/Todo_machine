@@ -1,5 +1,12 @@
+
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #192a56;
   margin: 0;
+  /* height: 100%; */
+  /* width: 100vw; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +17,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  /* overflow: scroll; */
+  /* height: 50%; */
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

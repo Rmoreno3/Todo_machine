@@ -1,0 +1,24 @@
+.TodoItem {
+  display: flex;
+  border-bottom: 2px solid #535c68;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#check[type="checkbox"]:checked {
+  color: red;
+}
+
+#trash {
+  color: red;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#text {
+  width: 100%;
+  margin-left: 5px;
+  color: white;
+  text-decoration: line-through;
+}

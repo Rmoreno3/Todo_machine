@@ -10,6 +10,20 @@ const todos = [
   { id: 0, text:'Hacer ejercicio', completed: false },
   { id: 1, text:'Tomar agua', completed: false },
   { id: 2, text:'Comer merienda', completed: false },
+  { id: 2, text:'Comer merienda', completed: false },
+  { id: 2, text:'Comer merienda', completed: false },
+  { id: 2, text:'Comer merienda', completed: false },
+  { id: 2, text:'Comer merienda', completed: false },
+  { id: 2, text:'Comer merienda', completed: false },
+  { id: 2, text:'Comer merienda', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
+  { id: 3, text:'Comer almuerzo', completed: false },
 ]
 
 function App() {
