@@ -4,12 +4,22 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Styles/TodoItem.css'
 
 function TodoItem(props) {
+  const onComplete = () => {
+    alert(`tarea completada ${props.text}`)
+  }
+
+  const onDelete = () => {
+    alert(`eliminaste la tarea ${props.text}`)
+  }
+
   return(
     <li className="TodoItem">
-      <input type="checkbox" id="check"/>
-      <p id="text">{props.text}</p>
-      <p>{props.status}</p>
-      <FontAwesomeIcon icon={faTrash} id="trash"/>
+      <span className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`} 
+      onClick={onComplete}>
+        √
+      </span>
+      <p className={`text ${props.completed && 'TodoItem-p--complete'}`}>{props.text}</p>
+      <FontAwesomeIcon icon={faTrash} className='trash' onClick={onDelete}/>
     </li>
   );
 }

@@ -1,13 +1,19 @@
 import React from "react";
-import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './Styles/CreateTodoButton.css'
 
 function CreateTodoButton() {
+  const addTask = (msg) => {
+    alert(msg)
+  };
+
+
   return(
     <div className="buttonContent">
-      <button className="buttonAdd" >
-        <FontAwesomeIcon icon={faCirclePlus} id="add"/>
+      <button 
+        className="CreateTodoButton"
+        onClick={() => addTask('ocurrio un evento')}
+      >
+        +
       </button>
     </div>
   );

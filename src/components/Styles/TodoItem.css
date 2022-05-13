@@ -6,19 +6,35 @@
   align-items: center;
 }
 
-#check[type="checkbox"]:checked {
-  color: red;
+.Icon {
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  /* background-color: #CCC; */
 }
 
-#trash {
+.Icon-check {
+  position: relative;
+  /* left: 12px; */
+}
+.Icon-check--active {
+  color: #4caf50;
+}
+
+.trash:hover {
   color: red;
   cursor: pointer;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
-#text {
+.text {
   width: 100%;
   margin-left: 5px;
   color: white;
+}
+
+.TodoItem-p--complete {
   text-decoration: line-through;
 }

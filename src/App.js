@@ -7,23 +7,10 @@ import { CreateTodoButton } from "./components/CreateTodoButton";
 // import './App.css';
 
 const todos = [
-  { id: 0, text:'Hacer ejercicio', completed: false },
-  { id: 1, text:'Tomar agua', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 2, text:'Comer merienda', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
-  { id: 3, text:'Comer almuerzo', completed: false },
+  { text:'Hacer ejercicio', completed: true },
+  { text:'Tomar agua', completed: false },
+  { text:'Comer merienda', completed: false },
+  { text:'Comer almuerzo', completed: false },
 ]
 
 function App() {
@@ -33,7 +20,10 @@ function App() {
       <TodoSearch />
       <TodoList>
         {todos.map(todo => (
-          <TodoItem key={todo.id} text={todo.text} status={todo.completed} /> 
+          <TodoItem 
+            key={todo.text} 
+            text={todo.text} 
+            completed={todo.completed} /> 
         ))}
       </TodoList>
       <CreateTodoButton />
