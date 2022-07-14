@@ -1,7 +1,7 @@
 import React from "react";
 import { faListCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './Styles/TodoCounter.css'
+import './TodoCounter.css'
 
 function TodoCounter({ total, completed }) {
   return(

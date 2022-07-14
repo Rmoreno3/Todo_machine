@@ -1,7 +1,7 @@
 import React from "react";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './Styles/TodoSearch.css'
+import './TodoSearch.css'
 
 function TodoSearch({ searchValue, setSearchValue }) {
   const onSearchValueChange = (e) => {
