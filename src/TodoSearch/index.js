@@ -11,7 +11,6 @@ function TodoSearch() {
   } = React.useContext(TodoContext);
 
   const onSearchValueChange = (e) => {
-    console.log(e.target.value)
     setSearchValue(e.target.value);
   }
 
