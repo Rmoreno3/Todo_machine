@@ -3,9 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #1e272e;
+  background-color: #F16529;
   padding: 5px;
   border-radius: 10px;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.51);
 }
 
 .TodoSearch {
@@ -13,10 +14,19 @@
   height: 30px;
   border: none;
   outline: none;
-  background-color: #1e272e;
-  color: white;
+  background-color: #F16529;
+}
+
+.TodoSearch::placeholder {
+  color: black;
 }
 
 #search {
   font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .searchContent {
+    width: 60%;
+  }
 }

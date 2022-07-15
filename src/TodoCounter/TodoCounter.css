@@ -1,11 +1,27 @@
-.TodoCounter {
-  font-size: 24px;
-  text-align: center;
-}
 .todoCounter-Container {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
 }
 
+.TodoCounter {
+  font-size: 25px;
+  text-align: center;
+}
 #list {
   font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .TodoCounter {
+    font-size: 40px;
+  }
+
+  .todoCounter-Container {
+    font-size: 40px;
+  }
 }

@@ -1,0 +1,9 @@
+.list-icon {
+  font-size: 200px;
+}
+
+@media (min-width: 768px) {
+  .empty-parrafo {
+    font-size: 19px;
+  }
+}

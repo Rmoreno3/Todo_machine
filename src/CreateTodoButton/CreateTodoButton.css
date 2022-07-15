@@ -6,14 +6,11 @@
 }
 
 .CreateTodoButton {
-  /* z-index: 1; */
-  background-color: #61DAFA;
-  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.2);
+  background-color: #F16529;
   border: none;
   border-radius: 50%;
   cursor: pointer;
   font-size: 40px;
-  /* position: fixed; */
   bottom: 24px;
   right: 24px;
   font-weight: bold;
@@ -23,11 +20,17 @@
   align-items: center;
   height: 44px;
   width: 44px;
-
   transform: rotate(0);
   transition: .3s ease;
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.51);
 }
 
 .CreateTodoButton:hover {
-  transform: rotate(224deg);
+  transform: rotate(130deg);
+}
+
+@media (min-width: 768px) {
+  .CreateTodoButton {
+    margin-bottom: 25px;
+  }
 }

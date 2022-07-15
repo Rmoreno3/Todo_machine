@@ -19,7 +19,7 @@ function TodoSearch() {
       <FontAwesomeIcon icon={faMagnifyingGlass} id="search"/>
       <input 
         className="TodoSearch"
-        placeholder="Cebolla"
+        placeholder="Search"
         value={searchValue}
         onChange={onSearchValueChange}/>
     </div>
