@@ -1,9 +1,15 @@
 import React from "react";
+import { TodoContext } from "../TodoContext";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './TodoSearch.css'
 
-function TodoSearch({ searchValue, setSearchValue }) {
+function TodoSearch() {
+  const {
+    searchValue,
+    setSearchValue,
+  } = React.useContext(TodoContext);
+
   const onSearchValueChange = (e) => {
     console.log(e.target.value)
     setSearchValue(e.target.value);
