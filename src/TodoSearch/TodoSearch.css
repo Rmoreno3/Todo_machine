@@ -21,6 +21,10 @@
   color: black;
 }
 
+.TodoSearch:disabled {
+  opacity: 25%;
+}
+
 #search {
   font-size: 20px;
 }

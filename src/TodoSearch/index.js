@@ -3,7 +3,7 @@ import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './TodoSearch.css'
 
-function TodoSearch({ searchValue, setSearchValue }) {
+function TodoSearch({ searchValue, setSearchValue, loading }) {
 
   const onSearchValueChange = (e) => {
     setSearchValue(e.target.value);
@@ -16,7 +16,9 @@ function TodoSearch({ searchValue, setSearchValue }) {
         className="TodoSearch"
         placeholder="Search"
         value={searchValue}
-        onChange={onSearchValueChange}/>
+        onChange={onSearchValueChange}
+        disabled={loading}
+        />
     </div>
   );
 }

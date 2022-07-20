@@ -12,6 +12,11 @@
   font-size: 25px;
   text-align: center;
 }
+
+.todoCounter--loading {
+  opacity: 25%;
+}
+
 #list {
   font-size: 30px;
 }
